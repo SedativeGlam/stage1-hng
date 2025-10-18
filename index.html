@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="card">
+        <figure>
+          <img
+            data-testid="test-user-avatar"
+            src="./image/Winnie_Onwuka.jpg"
+            alt="profile-image"
+          />
+        </figure>
+        <div class="user">
+          <div class="user-id">
+            <div class="user-name-time">
+              <h2 data-testid="test-user-name" aria-label="user-name">
+                Winifred Osara
+              </h2>
+
+              <div class="line"></div>
+
+              <span data-testid="test-user-time"></span>
+            </div>
+          </div>
+
+          <p data-testid="test-user-bio" class="bio">
+            A passionate Frontend developer who loves creating beautiful and
+            accessible web experience
+          </p>
+
+          <nav data-testid="test-user-social-links" aria-label="social-links">
+            <ul class="social-links">
+              <a
+                data-testid="test-user-social-github"
+                href="https://github.com/SedativeGlam"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <img
+                    src="./image/github_icon.png"
+                    alt="github-icon"
+                    width="12px"
+                  />
+                </span>
+                GitHub
+              </a>
+              <a
+                data-testid="test-user-social-linkedin"
+                href="https://www.linkedin.com/in/winnie-onwuka-84b047252"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <img
+                    src="./image/linkedin_icon.png"
+                    alt="linkedin-icon"
+                    width="14px"
+                  />
+                </span>
+                Linkedin
+              </a>
+              <a
+                data-testid="test-user-social-instagram"
+                href="https://www.instagram.com/uniquewini_fred"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <img
+                    src="./image/insta_icon.png"
+                    alt="instagram-icon"
+                    width="15px"
+                  />
+                </span>
+                Instagram
+              </a>
+            </ul>
+          </nav>
+
+          <section>
+            <div class="hobbies" data-testid="test-user-hobbies">
+              <h3>Hobbies:</h3>
+              <ul>
+                <li>Singing</li>
+                <li>Coding</li>
+                <li>Bowling</li>
+                <li>Painting</li>
+                <li>Music</li>
+                <li>Writing</li>
+                <li>Reading</li>
+              </ul>
+            </div>
+
+            <div class="dislikes" data-testid="test-user-dislikes">
+              <h3>Dislikes:</h3>
+              <ul>
+                <li>Dishonesty</li>
+                <li>Pride</li>
+                <li>Pessimism</li>
+                <li>Gossip</li>
+                <li>Unfairness</li>
+                <li>Distrust</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

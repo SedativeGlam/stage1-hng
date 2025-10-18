@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #b0a2db, #482c78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  color: #484848;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 20px #6d6d6dcc;
+  display: flex;
+  align-items: stretch;
+}
+
+.user-id {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+figure {
+  margin: 0;
+  min-width: 290px;
+  max-width: 290px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+h2 {
+  margin: 0;
+  color: #242424;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+}
+
+.user {
+  padding: 20px;
+}
+
+.user-name-time {
+  color: #3f0c6f;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.line {
+  height: 20px;
+  width: 1.2px;
+  background-color: #3f0c6f;
+}
+
+.bio {
+  color: #595858;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.social-links {
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.social-links a {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  text-decoration: none;
+  margin-bottom: 8px;
+  color: #414040;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h3 {
+  margin: 0 0 12px 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 15px;
+  color: #363636;
+  display: inline-block;
+}
+
+.hobbies {
+  margin-bottom: 20px;
+}
+
+.hobbies ul,
+.dislikes ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 14px;
+  background-color: #d9d4e7;
+  color: #484848;
+  border-radius: 20px;
+  padding: 5px 15px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 12px;
+    min-height: min-content;
+  }
+  .card {
+    border-radius: 16px;
+    flex-direction: column;
+  }
+
+  figure {
+    min-width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  figure img {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
