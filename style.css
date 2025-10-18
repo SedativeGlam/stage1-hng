@@ -34,7 +34,6 @@ figure {
   margin: 0;
   min-width: 290px;
   max-width: 290px;
-  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +147,8 @@ ul li {
   }
 
   figure img {
-    border-top-right-radius: 20px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     border-bottom-left-radius: 0;
   }
 
