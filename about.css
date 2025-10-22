@@ -12,13 +12,12 @@ body {
 }
 
 .about-me {
-  /* max-width: 1440px; */
-  /* padding: 0 300px 50px; */
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   color: #484848;
   width: 100%;
   max-width: 900px;
+  margin-bottom: 40px;
 }
 
 nav {
