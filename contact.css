@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #4c446e;
+  width: 100%;
+  max-width: 900px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.nav-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #746e8a;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4c446e;
+}
+
+.nav-links a.active {
+  color: #4c446e;
+  border-bottom: 2px solid #4c446e;
+}
+
+.logo img {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(44%) sepia(12%) saturate(645%)
+    hue-rotate(212deg) brightness(99%) contrast(93%);
+}
+
+.menu-toggle {
+  display: none;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 30px;
+}
+
+h1 {
+  margin: 0 0 35px;
+  color: #383242;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 50px;
+}
+
+form {
+  margin-top: 10px;
+  /* margin: 10px 200px 0; */
+  /* padding: 20px; */
+}
+
+.name-email-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+textarea {
+  padding: 15px;
+  background: linear-gradient(135deg, #d4cee4, #d8d3e4);
+  border: none;
+  border-radius: 8px;
+  outline-color: #6850d1;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  padding: 15px 15px 40px;
+  border-radius: 8px;
+  border: none;
+  vertical-align: top;
+  resize: vertical;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+form button {
+  margin-top: 20px;
+  background-color: #5334df;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  width: 150px;
+  cursor: pointer;
+}
+
+span {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #d92525;
+  min-height: 18px;
+}
+
+.success-msg {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #38ba84;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-container {
+    font-size: 16px;
+    padding: 0 30px 30px;
+  }
+
+  nav {
+    padding: 30px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle img {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    background-color: #dfdcec;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+    width: 170px;
+  }
+
+  form {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .name-email-grid {
+    display: block;
+  }
+
+  form button {
+    font-size: 16px;
+    width: 120px;
+  }
+
+  textarea {
+    padding: 15px 15px 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+  nav {
+    padding: 30px 0;
+  }
+
+  form {
+    margin: 20px 0 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}

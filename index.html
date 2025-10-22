@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <article data-testid="test-profile-card">
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./image/frontend-icon.png" alt="logo" />
+        </div>
+
+        <button class="menu-toggle">
+          <img src="./image/menu-icon.png" alt="menu-icon" />
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="card">
         <figure>
           <img
@@ -20,7 +42,7 @@
           <div class="user-id">
             <div class="user-name-time">
               <h2 data-testid="test-user-name" aria-label="user-name">
-                Winifred Osara
+                Winnie Onwuka
               </h2>
 
               <div class="line"></div>

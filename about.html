@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="about-me">
+      <nav>
+        <div class="logo">
+          <img src="./image/frontend-icon.png" alt="logo" />
+        </div>
+
+        <button class="menu-toggle">
+          <img src="./image/menu-icon.png" alt="menu-icon" />
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main data-testid="test-about-page" aria-label="about-page">
+        <section data-testid="test-about-bio" aria-label="bio">
+          <div class="bio-container">
+            <figure>
+              <img src="./image/Winnie_Onwuka.jpg" alt="bio-image" />
+            </figure>
+
+            <div class="bio-details">
+              <h1>About Me</h1>
+              <p>
+                I'm Winnie, a passionate and creative Frontend developer who
+                enjoys bringing ideas to life on the web. I love discovering new
+                ways to make digital experience beautiful, responsive, and easy
+                to use.
+              </p>
+            </div>
+          </div>
+
+          <section
+            class="goals"
+            data-testid="test-about-goals"
+            aria-label="goals"
+          >
+            <h3>My Goals in This Program</h3>
+            <ul>
+              <li>Strengthen my frontend development skills</li>
+              <li>Improve my understanding of accessibility.</li>
+              <li>
+                Learn how to build complete, user-friendly web applications from
+                scratch.
+              </li>
+              <li>Build confidence.</li>
+              <li>
+                Learn how to effectively communicate and work with team mates.
+              </li>
+            </ul>
+          </section>
+
+          <section data-testid="test-about-confidence" aria-label="confidence">
+            <h3>Areas of Low Confidence</h3>
+            <p>
+              I'm still gaining confidence in building clean, user-friendly web
+              applications, and doing that within a fast pace. But I'm excited
+              to keep learning and improving through practice.
+            </p>
+          </section>
+
+          <section
+            class="future-self"
+            data-testid="test-about-future-note"
+            aria-label="future-note"
+          >
+            <h3>Note to My Future Self</h3>
+            <p>
+              Keep going even when things feel hard. Remember how far you've
+              come and code smarter. Never stop learning and building - your
+              best work is yet to come.
+            </p>
+          </section>
+
+          <section data-testid="test-about-extra" aria-label="extra">
+            <h3>Extra Thoughts</h3>
+            <p>
+              Let's build memories, confidence, and web applications!
+            </p>
+          </section>
+        </section>
+      </main>
+    </article>
+
+    <script src="about.js"></script>
+  </body>
+</html>
